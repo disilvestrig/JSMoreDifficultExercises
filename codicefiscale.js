@@ -45,7 +45,8 @@ const checkFinal = (chars) =>{
     }
     return (!isNaN(+chars))
 }
-const convalidateCode = (string) =>{
+function convalidate(){
+    string = getCode()
     let name = "" 
     for(let i = 0;i<3;i++){
         name += string.charAt(i)
@@ -101,4 +102,5 @@ const convalidateCode = (string) =>{
         }
     alert("Valid Code")
 }
+
 
