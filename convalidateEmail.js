@@ -2,14 +2,14 @@ function getMail(){
     return prompt("Insert your mail address","")
 }
 
-function convalidate(email){
+function convalidateEmail(email){
     let valid = (new RegExp("@")).test(email)
     return valid
 }
 
 function process(){
     while (true){
-        if(convalidate(getMail())){
+        if(convalidateEmail(getMail())){
             alert("Valid email address, continue") 
             break
         }
