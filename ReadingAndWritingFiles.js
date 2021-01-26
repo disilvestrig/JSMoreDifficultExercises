@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-const path = ["./testo.txt","./testo1.txt","./testo19.txt","./result.txt"]
+const path = ["./textname1.txt","./textname2.txt","./textname3.txt","./textresult.txt"]
 
 fs.readFile(path[0] , (err,data) => {
     let result = ""
